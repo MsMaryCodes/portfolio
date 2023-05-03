@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <nav class="navSection">
@@ -18,11 +19,14 @@
 
         <div class="navMenu">
             <div class="wrapper">
+                <div class="logoImg">
+                    <!-- logo image -->
+                </div>
                 <ul class="navBarList">
-                    <li class="navItem"><a class="navLink">About me</a></li>
-                    <li class="navItem"><a class="navLink">Resume</a></li>
-                    <li class="navItem"><a class="navLink">Portfolio</a></li>
-                    <li class="navItem"><a class="navLink">Contact</a></li>
+                    <li class="navItem"><a class="navLink" href="#">About me</a></li>
+                    <li class="navItem"><a class="navLink" href="#">Resume</a></li>
+                    <li class="navItem"><a class="navLink" href="#">Portfolio</a></li>
+                    <li class="navItem"><a class="navLink" href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -31,7 +35,8 @@
     <header class="headerSection">
         <div class="wrapper">
             <div class="heroText">
-                <h1>Hello, I'm <br> Mary Solidum</h1>
+                <h2>Hello, I'm</h2>
+                <h1>Mary Solidum</h1>
                 <!-- down button, scroll down -->
             </div>
         </div>
@@ -41,26 +46,106 @@
         <div class="wrapper">
             <section class="aboutSection">
                 <div class="textContainer">
-                    <h2>About Me</h2>
+                    <h3>About Me</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, veniam deleniti laudantium enim, et reiciendis mollitia aperiam excepturi officiis modi rem a. Ex, praesentium laborum culpa quasi rem commodi tenetur.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, veniam deleniti laudantium enim, et reiciendis
                     mollitia aperiam excepturi officiis modi rem a. Ex, praesentium laborum culpa quasi rem commodi tenetur.</p>
-                    <a class="contactBtn" href="#">Contact me</a>
+                    <a class="btn contactBtn" href="#">Contact me</a>
                 </div>
                 <div class="imgContainer">
-                    <img src="" alt="">
+                    <img src="./assets/pexels-ravi-kant-2870812.jpeg" alt="A picture of Mary Solidum">
                 </div>
             </section>
 
             <section class="resumeSection">
+                <div class="skillSection">
+                    <h3>My Skills</h3>
+                    <ul class="skillsCoding">
+                        <li>
+                            <i></i>
+                            <p>HTML</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>CSS</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>SASS</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>JAVASCRIPT</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>REACT</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>GITHUB</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>FIREBASE</p>
+                        </li>
+                    </ul>
+                    <ul class="skillsDesign">
+                        <li>
+                            <i></i>
+                            <p>ADOBE SUITE</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>FIGMA</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>MICROSOFT OFFICE</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>PROCREATE</p>
+                        </li>
+                    </ul>
 
+                </div>
             </section>
 
             <section class="portfolioSection">
 
             </section>
-            <section class="contactSection">
 
+            <section class="contactSection">
+                <h3>Get in touch</h3>
+                <div class="contactFormContainer">
+                    <h4>Contact form</h4>
+                    <p>Please allow up to one week for me to get back to you! Thank you!</p>
+                    <form action="submit">
+                        <input type="text" placeholder="Your Name">
+                        <input type="text" placeholder="Your Email">
+                        <input type="text" placeholder="Your Phone Number">
+                        <label for="messageBox" class="sr-only
+                        ">Write a message</label>
+                        <textarea name="messageBox" id="" cols="30" rows="10" placeholder="Write a Message"></textarea>
+                        <button type="submit" class="btn formBtn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contactDetailsContainer">
+                    <h4>My contact details</h4>
+                    <ul class="contactDetailsList">
+                        <li>
+                            <h5>Email</h5>
+                            <p>ms.marysolidum@gmail.com</p>
+                        </li>
+                        <li>
+                            <h5>Socials</h5>
+                            <div class="socialIcons">
+                                <!-- linkedIn, Twitter, Instagram, GitHub -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </div>
     </main>
