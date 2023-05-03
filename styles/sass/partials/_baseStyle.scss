@@ -11,14 +11,21 @@ body {
     letter-spacing: 1.1px;
 }
 
-h2,h3,h4,h5 {
+h2,h3 {
     font-weight: 800;
-    letter-spacing: 2.2px;
+    letter-spacing: 5px;
     text-transform: uppercase;
+}
+
+h4, h5 {
+    font-weight: 700;
+    letter-spacing: 2px;
+
 }
 
 h1 {
     margin: 0;
+    letter-spacing: 5px;
     font-family: "Satisfy", serif;
     text-transform: capitalize;
 }
