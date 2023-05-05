@@ -1,6 +1,13 @@
 .mainSection {
     background-color: $lighterPink;
 
+    .main-content {
+        display: flex;
+        justify-content: center;
+        padding: 80px 0;
+        width: 100vw;
+    }
+
     .formBtn {
         background-color: transparent;
         border: none;
@@ -12,7 +19,7 @@
         padding: 10px 20px;
         border-radius: 30px;
         border: 3px solid $mango;
-        transition: color 1s, background-color 1s, box-shadow 1s;
+        transition: color 0.9s, background-color 0.9s, box-shadow 0.9s;
         transition-delay: 0.3s;
     }
 
@@ -21,6 +28,6 @@
     .btn:focus {
         color: $lighterPink;
         background-color: $mango;
-        box-shadow: 0 0 22px rgb(0, 0, 0, 0.18);
+        box-shadow: 0 0 22px rgb(0, 0, 0, 0.16);
     }
 }

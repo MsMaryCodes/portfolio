@@ -28,11 +28,12 @@ nav {
                         justify-content: space-between;
                         
                         li {
-                            width: 100px;
+                            width: 120px;
                             display: flex;
                             justify-content: center;
 
                             a {
+                                    font-size: 1.1rem;
                                     color: $lightPink;
                                     text-align: center;
                                     transition: color 0.8s, font-weight 0.8s, scale 0.8s;
