@@ -29,6 +29,7 @@
                 text-align: center;
                 color: $lightPink;
                 margin-bottom: 20px;
+                font-weight: 600;
             }
 
             a {
@@ -42,16 +43,17 @@
                 border-radius: 50%;
                 border: 3px solid $mango;
                 margin-top: 50px;
-                transition: color 1s, background-color 1s, scale 2s;
+                transition: color 1s, background-color 1s, scale 1.5s, box-shadow 1s;
                 transition-delay: 0.3s;
             }
 
             a:hover,
-            a:active {
-                color: $lightPink;
+            a:active,
+            a:focus {
+                color: $lighterPink;
                 background-color: $mango;
                 scale: 1.2;
-
+                box-shadow: 0 0 22px rgb(0, 0, 0, 0.30);
             }
         }
     }

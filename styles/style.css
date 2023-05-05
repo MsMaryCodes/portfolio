@@ -226,6 +226,10 @@ html {
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -234,18 +238,18 @@ html {
 body {
   font-family: "Jost", sans-serif;
   font-size: 125%;
-  font-weight: 400;
-  letter-spacing: 1.1px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
 }
 
 h2, h3 {
-  font-weight: 800;
-  letter-spacing: 5px;
+  font-weight: 400;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 h4, h5 {
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
@@ -256,11 +260,30 @@ h1 {
   color: #FFDBD9;
 }
 
+h3 {
+  font-size: 2.4rem;
+  color: #345144;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
 .btn, a {
   text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2.2px;
+  font-size: 1.3rem;
 }
 
 ul {
@@ -271,18 +294,26 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin-bottom: 10px;
+}
+
 .wrapper {
   margin: 0 7.5rem;
   max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 nav {
@@ -352,7 +383,8 @@ nav .wrapper .navMenu .navBarList li a {
           transition-delay: 0.2s;
 }
 nav .wrapper .navMenu .navBarList li a:hover,
-nav .wrapper .navMenu .navBarList li a:active {
+nav .wrapper .navMenu .navBarList li a:active,
+nav .wrapper .navMenu .navBarList li a:focus {
   color: #FBB255;
   font-weight: 600;
   scale: 1.1;
@@ -403,6 +435,7 @@ nav .wrapper .navMenu .navBarList li a:active {
   text-align: center;
   color: #FFDBD9;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 .headerSection .wrapper .heroText a {
   display: -webkit-box;
@@ -421,14 +454,84 @@ nav .wrapper .navMenu .navBarList li a:active {
   border-radius: 50%;
   border: 3px solid #FBB255;
   margin-top: 50px;
-  -webkit-transition: color 1s, background-color 1s, scale 2s;
-  transition: color 1s, background-color 1s, scale 2s;
+  -webkit-transition: color 1s, background-color 1s, scale 1.5s, -webkit-box-shadow 1s;
+  transition: color 1s, background-color 1s, scale 1.5s, -webkit-box-shadow 1s;
+  transition: color 1s, background-color 1s, scale 1.5s, box-shadow 1s;
+  transition: color 1s, background-color 1s, scale 1.5s, box-shadow 1s, -webkit-box-shadow 1s;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
 .headerSection .wrapper .heroText a:hover,
-.headerSection .wrapper .heroText a:active {
-  color: #FFDBD9;
+.headerSection .wrapper .heroText a:active,
+.headerSection .wrapper .heroText a:focus {
+  color: #fef6f6;
   background-color: #FBB255;
   scale: 1.2;
+  -webkit-box-shadow: 0 0 22px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 22px rgba(0, 0, 0, 0.3);
+}
+
+.mainSection {
+  background-color: #fef6f6;
+}
+.mainSection .formBtn {
+  background-color: transparent;
+  border: none;
+  font-family: "Jost", sans-serif;
+}
+.mainSection .btn {
+  color: #FBB255;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 3px solid #FBB255;
+  -webkit-transition: color 1s, background-color 1s, -webkit-box-shadow 1s;
+  transition: color 1s, background-color 1s, -webkit-box-shadow 1s;
+  transition: color 1s, background-color 1s, box-shadow 1s;
+  transition: color 1s, background-color 1s, box-shadow 1s, -webkit-box-shadow 1s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.mainSection .btn:hover,
+.mainSection .btn:active,
+.mainSection .btn:focus {
+  color: #fef6f6;
+  background-color: #FBB255;
+  -webkit-box-shadow: 0 0 22px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 0 22px rgba(0, 0, 0, 0.18);
+}
+
+.aboutSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0;
+  width: 100vw;
+}
+.aboutSection .wrapper {
+  gap: 40px;
+}
+.aboutSection .wrapper .textContainer {
+  width: 55%;
+}
+.aboutSection .wrapper .textContainer p:nth-child(3) {
+  margin-bottom: 50px;
+}
+.aboutSection .wrapper .imgContainer {
+  width: 45%;
+  height: 450px;
+}
+
+.resumeSection {
+  background-color: #FFDBD9;
+}
+
+.contactSection {
+  background-color: #022626;
+}
+
+footer {
+  background-color: #022626;
 }

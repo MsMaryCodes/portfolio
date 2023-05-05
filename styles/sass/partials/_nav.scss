@@ -40,7 +40,8 @@ nav {
                                 }
                             
                                 a:hover,
-                                a:active {
+                                a:active,
+                                a:focus {
                                     color: $mango;
                                     font-weight: 600;
                                     scale: 1.1;

@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,18 +10,18 @@
 body {
     font-family: "Jost", sans-serif;
     font-size: 125%;
-    font-weight: 400;
-    letter-spacing: 1.1px;
+    font-weight: 300;
+    letter-spacing: 1.2px;
 }
 
 h2,h3 {
-    font-weight: 800;
-    letter-spacing: 5px;
+    font-weight: 400;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
 h4, h5 {
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 2px;
 }
 
@@ -29,12 +32,29 @@ h1 {
     color: $lightPink;
 }
 
+h3 {
+    font-size: 2.4rem;
+    color: $midGreen;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
 .btn, a {
     text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 2px;
-    font-size: 1rem;
-     
+    font-weight: 400;
+    letter-spacing: 2.2px;
+    font-size: 1.3rem;
 }
 
 ul {
@@ -43,23 +63,24 @@ ul {
 
 a {
     text-decoration: none;
+}
 
+p {
+    margin-bottom: 10px;
 }
 
 .wrapper {
     margin: 0 7.5rem;
     max-width: 1200px;
     display: flex;
+    width: 100%;
 }
 
-// .imgContainer {
-//     width: 300px;
-//     // change
-    
-// }
 img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
     // change
     
 }

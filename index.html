@@ -24,8 +24,8 @@
                     <img src="./assets/logo.png" alt="Mary Solidum Logo">
                 </div>
                 <ul class="navBarList">
-                    <li class="navItem"><a class="navLink" href="#">About me</a></li>
-                    <li class="navItem"><a class="navLink" href="#">Resume</a></li>
+                    <li class="navItem"><a class="navLink" href="#aboutMe">About me</a></li>
+                    <li class="navItem"><a class="navLink" href="#myResume">Resume</a></li>
                     <li class="navItem"><a class="navLink" href="#">Portfolio</a></li>
                     <li class="navItem"><a class="navLink" href="#">Contact</a></li>
                 </ul>
@@ -39,17 +39,17 @@
             <div class="heroText">
                 <h2>Hello, I'm</h2>
                 <h1>Mary Solidum</h1>
-                <a href=""><i class="fa-sharp fa-solid fa-angle-down" title="Down arrow"></i></a>
+                <a href="#aboutMe"><i class="fa-sharp fa-solid fa-angle-down" title="Down arrow"></i></a>
                 <!-- down button, scroll down -->
             </div>
         </div>
     </header>
 
     <main class="mainSection">
-            <section class="aboutSection">
+            <section class="aboutSection" id="aboutMe">
                 <div class="wrapper">
                     <div class="textContainer">
-                        <h3>About Me</h3>
+                        <h3 >About <span class="bold">Me</span></h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, veniam deleniti laudantium enim, et
                             reiciendis mollitia aperiam excepturi officiis modi rem a. Ex, praesentium laborum culpa quasi rem commodi
                             tenetur.</p>
@@ -64,10 +64,10 @@
                 </div>
             </section>
 
-            <section class="resumeSection">
+            <section class="resumeSection" id="myResume">
                 <div class="wrapper">
                     <div class="skillContainer">
-                        <h3>My Skills</h3>
+                        <h3>My <span class="bold">Skills</span></h3>
                         <ul class="skillsCoding">
                             <li>
                                 <i></i>
@@ -118,7 +118,7 @@
                         </ul>
                     </div>
                     <div class="resumeContainer">
-                        <h3>My Resume</h3>
+                        <h3>My <span class="bold">Resume</span></h3>
                         <div class="educationContainer">
                             <h4>Education</h4>
                             <ul class="educationList">
@@ -171,7 +171,7 @@
                 </div>            
             </section>
 
-            <section class="portfolioSection">
+            <section class="portfolioSection" id="myPortfolio">
                 <div class="wrapper">
                     <h3>My Work</h3>
                     <div class="portfolioFilter">
@@ -235,12 +235,16 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="portfolioMoreBtn">
+                        <a href="#" class="moreBtn btn">View My Design Portfolio</a>
+                    </div>
                 </div>
             </section>
 
             <section class="contactSection">
                 <div class="wrapper">
-                    <h3>Get in touch</h3>
+                    <h3>Get <span class="bold">In Touch</span></h3>
                     <div class="contactFormContainer">
                         <h4>Contact form</h4>
                         <p>Please allow up to one week for me to get back to you! Thank you!</p>
