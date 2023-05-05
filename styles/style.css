@@ -262,7 +262,7 @@ h1 {
 
 h3 {
   font-size: 2.4rem;
-  color: #345144;
+  color: #e57769;
   margin-bottom: 20px;
 }
 
@@ -386,7 +386,7 @@ nav .wrapper .navMenu .navBarList li a {
 nav .wrapper .navMenu .navBarList li a:hover,
 nav .wrapper .navMenu .navBarList li a:active,
 nav .wrapper .navMenu .navBarList li a:focus {
-  color: #FBB255;
+  color: #e57769;
   font-weight: 600;
   scale: 1.1;
 }
@@ -449,31 +449,32 @@ nav .wrapper .navMenu .navBarList li a:focus {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2.5rem;
-  color: #FBB255;
+  color: #f5a945;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 3px solid #FBB255;
+  border: 3px solid #f5a945;
   margin-top: 50px;
-  -webkit-transition: color 0.9s, background-color 0.9s, scale 1.5s, -webkit-box-shadow 0.9s;
-  transition: color 0.9s, background-color 0.9s, scale 1.5s, -webkit-box-shadow 0.9s;
-  transition: color 0.9s, background-color 0.9s, scale 1.5s, box-shadow 0.9s;
-  transition: color 0.9s, background-color 0.9s, scale 1.5s, box-shadow 0.9s, -webkit-box-shadow 0.9s;
+  -webkit-transition: color 0.9s, background-color 0.9s, scale 1.5s, border-color 0.9s, -webkit-box-shadow 0.9s;
+  transition: color 0.9s, background-color 0.9s, scale 1.5s, border-color 0.9s, -webkit-box-shadow 0.9s;
+  transition: color 0.9s, background-color 0.9s, scale 1.5s, box-shadow 0.9s, border-color 0.9s;
+  transition: color 0.9s, background-color 0.9s, scale 1.5s, box-shadow 0.9s, border-color 0.9s, -webkit-box-shadow 0.9s;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
 .headerSection .wrapper .heroText a:hover,
 .headerSection .wrapper .heroText a:active,
 .headerSection .wrapper .heroText a:focus {
-  color: #fef6f6;
-  background-color: #FBB255;
+  color: #fff3f3;
+  background-color: #e57769;
+  border-color: #e57769;
   scale: 1.2;
   -webkit-box-shadow: 0 0 22px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 22px rgba(0, 0, 0, 0.3);
 }
 
 .mainSection {
-  background-color: #fef6f6;
+  background-color: #fff3f3;
 }
 .mainSection .main-content {
   display: -webkit-box;
@@ -491,22 +492,23 @@ nav .wrapper .navMenu .navBarList li a:focus {
   font-family: "Jost", sans-serif;
 }
 .mainSection .btn {
-  color: #FBB255;
+  color: #f5a945;
   padding: 10px 20px;
   border-radius: 30px;
-  border: 3px solid #FBB255;
-  -webkit-transition: color 0.9s, background-color 0.9s, -webkit-box-shadow 0.9s;
-  transition: color 0.9s, background-color 0.9s, -webkit-box-shadow 0.9s;
-  transition: color 0.9s, background-color 0.9s, box-shadow 0.9s;
-  transition: color 0.9s, background-color 0.9s, box-shadow 0.9s, -webkit-box-shadow 0.9s;
+  border: 3px solid #f5a945;
+  -webkit-transition: color 0.9s, background-color 0.9s, border-color 0.9s, -webkit-box-shadow 0.9s;
+  transition: color 0.9s, background-color 0.9s, border-color 0.9s, -webkit-box-shadow 0.9s;
+  transition: color 0.9s, background-color 0.9s, box-shadow 0.9s, border-color 0.9s;
+  transition: color 0.9s, background-color 0.9s, box-shadow 0.9s, border-color 0.9s, -webkit-box-shadow 0.9s;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
 .mainSection .btn:hover,
 .mainSection .btn:active,
 .mainSection .btn:focus {
-  color: #fef6f6;
-  background-color: #FBB255;
+  color: #fff3f3;
+  background-color: #e57769;
+  border-color: #e57769;
   -webkit-box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
           box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
 }
