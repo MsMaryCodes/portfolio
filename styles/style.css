@@ -229,7 +229,6 @@ html {
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid red;
 }
 
 body {
@@ -254,11 +253,14 @@ h1 {
   margin: 0;
   font-family: "Satisfy", serif;
   text-transform: capitalize;
+  color: #FFDBD9;
 }
 
-.btn {
+.btn, a {
   text-transform: uppercase;
   font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 1rem;
 }
 
 ul {
@@ -272,14 +274,161 @@ a {
 .wrapper {
   margin: 0 7.5rem;
   max-width: 1200px;
-}
-
-.imgContainer {
-  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+nav {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .wrapper .navMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 500px;
+  margin-top: 50px;
+}
+nav .wrapper .navMenu .logoImg {
+  width: 100px;
+}
+nav .wrapper .navMenu .navBarList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .wrapper .navMenu .navBarList li {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav .wrapper .navMenu .navBarList li a {
+  color: #FFDBD9;
+  text-align: center;
+  -webkit-transition: color 0.8s, font-weight 0.8s, scale 0.8s;
+  transition: color 0.8s, font-weight 0.8s, scale 0.8s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+nav .wrapper .navMenu .navBarList li a:hover,
+nav .wrapper .navMenu .navBarList li a:active {
+  color: #FBB255;
+  font-weight: 600;
+  scale: 1.1;
+}
+
+.headerSection {
+  background-image: url(../assets/malte-michels-s4wGZw3UuLk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.headerSection .wrapper {
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.headerSection .wrapper .heroText {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.headerSection .wrapper .heroText h1 {
+  font-size: 8rem;
+  text-align: center;
+}
+.headerSection .wrapper .heroText h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #FFDBD9;
+  margin-bottom: 20px;
+}
+.headerSection .wrapper .heroText a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5rem;
+  color: #FBB255;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #FBB255;
+  margin-top: 50px;
+  -webkit-transition: color 1s, background-color 1s, scale 2s;
+  transition: color 1s, background-color 1s, scale 2s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.headerSection .wrapper .heroText a:hover,
+.headerSection .wrapper .heroText a:active {
+  color: #FFDBD9;
+  background-color: #FBB255;
+  scale: 1.2;
 }

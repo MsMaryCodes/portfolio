@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 body {
@@ -20,18 +20,20 @@ h2,h3 {
 h4, h5 {
     font-weight: 700;
     letter-spacing: 2px;
-
 }
 
 h1 {
     margin: 0;
     font-family: "Satisfy", serif;
     text-transform: capitalize;
+    color: $lightPink;
 }
 
-.btn {
+.btn, a {
     text-transform: uppercase;
     font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 1rem;
      
 }
 
@@ -41,18 +43,20 @@ ul {
 
 a {
     text-decoration: none;
+
 }
 
 .wrapper {
     margin: 0 7.5rem;
     max-width: 1200px;
+    display: flex;
 }
 
-.imgContainer {
-    width: 300px;
-    // change
+// .imgContainer {
+//     width: 300px;
+//     // change
     
-}
+// }
 img {
     width: 100%;
     object-fit: cover;
