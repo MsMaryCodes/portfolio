@@ -1,3 +1,103 @@
 .contactSection {
     background-color: $darkGreen;
+
+    h3 {
+        margin-bottom: 50px;
+    }
+
+    h4,
+    h5,
+    p {
+        color: $lightPink;
+    }
+    
+    h4,
+    h5 {
+        margin-bottom: 10px;
+        // font-weight: 400;
+        // text-transform: uppercase;
+    }
+
+
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+
+        .contactContainer {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            width: 100%;
+
+            .contactFormContainer {
+                width: 60%;
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    margin-top: 20px;
+
+                    input,
+                    textarea {
+                        border: none;
+                        padding: 10px;
+                        font-family: "Jost", sans-serif;
+                        background: $midGreen;
+                        color: $lighterPink;
+                    }
+
+                    .formBtn {
+                        width: 40%;
+                        margin-top: 20px;
+                        color: $lighterPink;
+                        border-color: $lighterPink;
+                        transition: color 0.9s, background-color 0.9s, border-color 0.9s;
+                        transition-delay: 0.3s;
+                    }
+
+                    .formBtn:hover,
+                    .formBtn:active,
+                    .formBtn:focus {
+                        color: $lighterPink;
+                        border-color: $salmon;
+                    }
+                }
+            }
+
+            .contactDetailsContainer {
+                h4 {
+                    margin-bottom: 50px;
+                }
+
+                p {
+                    margin-bottom: 30px;
+                }
+
+                .socialList {
+                    display: flex;
+                    gap: 20px;
+                    
+                
+                    a {
+                        margin-top: 10px;
+                        font-size: 2rem;
+                        color: $lighterPink;
+                        width: 80px;
+                        transition: color 0.8s, font-size 0.8s;
+                        transition-delay: 0.3s;
+                    }
+
+                    a:hover,
+                    a:focus,
+                    a:active {
+                        color: $salmon;
+                        font-size: 2.3rem;
+                    }
+                }
+            }
+        }
+    }
+
 }

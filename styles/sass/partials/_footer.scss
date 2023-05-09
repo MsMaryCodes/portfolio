@@ -1,3 +1,14 @@
 footer {
     background-color: $darkGreen;
+
+
+    .wrapper {
+        justify-content: center;
+        margin: 0 auto;
+
+        p {
+            color: $lightPink;
+            margin-bottom: 30px;
+        }
+    }
 }
