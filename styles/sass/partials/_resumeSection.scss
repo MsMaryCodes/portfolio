@@ -41,3 +41,122 @@
         }
     }
 }
+
+.resumeContainer {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+
+        .timelineContainer {
+            width: 100%;
+            position: relative;
+            margin: 0 auto;
+            display: flex;
+            gap: 80px;
+
+            .educationContainer {
+                width: 40%;
+            }
+
+            .experienceContainer {
+                width: 60%;
+
+                ul {
+                    padding-top: 80px;
+                }
+            }
+            .educationContainer,
+            .experienceContainer {
+
+                h4 {
+                    margin-bottom: 30px;
+                }
+
+                ul {
+
+                    .resumeLeft,
+                    .resumeRight {
+                        padding: 20px 40px;
+                        position: relative;
+                        background-color: $lightPink;
+                        border-radius: 10px;
+                    }
+
+                    .resumeLeft:nth-child(1) {
+                        margin-bottom: 210px;
+                    }
+
+                    .resumeLeft:nth-child(2) {
+                        margin-bottom: 100px;
+                    }
+
+                    .resumeRight {
+                        margin-bottom: 30px;
+                    }
+
+                    .resumeLeft::before {
+                        content: "";
+                        height: 0;
+                        position: absolute;
+                        top: 20px;
+                        width: 0;
+                        z-index: 10;
+                        right: -15px;
+                        border: medium solid $lightPink;
+                        border-width: 15px 0 15px 15px;
+                        border-color: transparent transparent transparent $lightPink;
+                    }
+
+                    .resumeRight::before {
+                        content: "";
+                        height: 0;
+                        position: absolute;
+                        top: 20px;
+                        width: 0;
+                        z-index: 10;
+                        left: -15px;
+                        border: medium solid $lightPink;
+                        border-width: 15px 15px 15px 0;
+                        border-color: transparent $lightPink transparent transparent;
+                    }
+
+                    .resumeLeft::after {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        right: -49px;
+                        background-color: $salmon;
+                        top: 25px;
+                        border-radius: 50%;
+                        z-index: 1;
+                    }
+
+                    .resumeRight::after {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        left: -51px;
+                        background-color: $salmon;
+                        top: 25px;
+                        border-radius: 50%;
+                        z-index: 1;
+                    }
+                }   
+            }
+        }
+
+        .timelineContainer::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: $salmon;
+            top: 50px;
+            bottom: 0;
+            left: 40.5%;
+            margin-left: -3px;
+        }
+    }
+
+}

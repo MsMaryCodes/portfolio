@@ -587,16 +587,130 @@ nav .wrapper .navMenu .navBarList li a:focus {
   width: 65px;
 }
 
+.resumeContainer .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.resumeContainer .wrapper .timelineContainer {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+}
+.resumeContainer .wrapper .timelineContainer .educationContainer {
+  width: 40%;
+}
+.resumeContainer .wrapper .timelineContainer .experienceContainer {
+  width: 60%;
+}
+.resumeContainer .wrapper .timelineContainer .experienceContainer ul {
+  padding-top: 80px;
+}
+.resumeContainer .wrapper .timelineContainer .educationContainer h4,
+.resumeContainer .wrapper .timelineContainer .experienceContainer h4 {
+  margin-bottom: 30px;
+}
+.resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeLeft,
+.resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeRight,
+.resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeLeft,
+.resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeRight {
+  padding: 20px 40px;
+  position: relative;
+  background-color: #FFDBD9;
+  border-radius: 10px;
+}
+.resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeLeft:nth-child(1),
+.resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeLeft:nth-child(1) {
+  margin-bottom: 210px;
+}
+.resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeLeft:nth-child(2),
+.resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeLeft:nth-child(2) {
+  margin-bottom: 100px;
+}
+.resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeRight,
+.resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeRight {
+  margin-bottom: 30px;
+}
+.resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeLeft::before,
+.resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeLeft::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 20px;
+  width: 0;
+  z-index: 10;
+  right: -15px;
+  border: medium solid #FFDBD9;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent transparent transparent #FFDBD9;
+}
+.resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeRight::before,
+.resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeRight::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 20px;
+  width: 0;
+  z-index: 10;
+  left: -15px;
+  border: medium solid #FFDBD9;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent #FFDBD9 transparent transparent;
+}
+.resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeLeft::after,
+.resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeLeft::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -49px;
+  background-color: #e57769;
+  top: 25px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeRight::after,
+.resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeRight::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -51px;
+  background-color: #e57769;
+  top: 25px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.resumeContainer .wrapper .timelineContainer::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #e57769;
+  top: 50px;
+  bottom: 0;
+  left: 40.5%;
+  margin-left: -3px;
+}
+
 .contactSection {
   background-color: #022626;
 }
 .contactSection h3 {
   margin-bottom: 50px;
+  color: #FFDBD9;
 }
 .contactSection h4,
 .contactSection h5,
 .contactSection p {
-  color: #FFDBD9;
+  color: #6a8679;
 }
 .contactSection h4,
 .contactSection h5 {
@@ -641,13 +755,13 @@ nav .wrapper .navMenu .navBarList li a:focus {
   padding: 10px;
   font-family: "Jost", sans-serif;
   background: #345144;
-  color: #fff3f3;
+  color: #d8e8e8;
 }
 .contactSection .wrapper .contactContainer .contactFormContainer form .formBtn {
   width: 40%;
   margin-top: 20px;
-  color: #fff3f3;
-  border-color: #fff3f3;
+  color: #FFDBD9;
+  border-color: #FFDBD9;
   -webkit-transition: color 0.9s, background-color 0.9s, border-color 0.9s;
   transition: color 0.9s, background-color 0.9s, border-color 0.9s;
   -webkit-transition-delay: 0.3s;
@@ -669,22 +783,26 @@ nav .wrapper .navMenu .navBarList li a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
-.contactSection .wrapper .contactContainer .contactDetailsContainer .socialList a {
+.contactSection .wrapper .contactContainer .contactDetailsContainer .socialList li {
+  width: 50px;
+  height: 50px;
+  text-align: center;
   margin-top: 10px;
+}
+.contactSection .wrapper .contactContainer .contactDetailsContainer .socialList li a {
   font-size: 2rem;
-  color: #fff3f3;
-  width: 80px;
+  color: #6a8679;
   -webkit-transition: color 0.8s, font-size 0.8s;
   transition: color 0.8s, font-size 0.8s;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
-.contactSection .wrapper .contactContainer .contactDetailsContainer .socialList a:hover,
-.contactSection .wrapper .contactContainer .contactDetailsContainer .socialList a:focus,
-.contactSection .wrapper .contactContainer .contactDetailsContainer .socialList a:active {
-  color: #e57769;
+.contactSection .wrapper .contactContainer .contactDetailsContainer .socialList li a:hover,
+.contactSection .wrapper .contactContainer .contactDetailsContainer .socialList li a:focus,
+.contactSection .wrapper .contactContainer .contactDetailsContainer .socialList li a:active {
+  color: #FFDBD9;
   font-size: 2.3rem;
 }
 
@@ -698,6 +816,6 @@ footer .wrapper {
   margin: 0 auto;
 }
 footer .wrapper p {
-  color: #FFDBD9;
+  color: #6a8679;
   margin-bottom: 30px;
 }
