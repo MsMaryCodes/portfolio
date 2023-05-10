@@ -1,0 +1,138 @@
+@media (max-width: 480px) {
+    .wrapper {
+        margin: 1rem;
+    }
+
+    .mainSection {
+        .main-content {
+            padding: 30px 0;
+        }
+
+        .btn {
+            margin: 0 auto;
+        }
+    }
+
+    nav .wrapper .navMenu {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .logoImg {
+            width: 100px;
+        }
+        
+        .navBarList {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    .aboutSection .wrapper {
+        .textContainer {
+            text-align: center;
+            margin-bottom: 20px;
+            h3 {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .skillContainer .wrapper {
+        .skillsCoding,
+        .skillsDesign {
+            width: 90%;
+            flex-wrap: wrap;
+            gap: 50px 70px;
+            justify-content: space-evenly;
+
+            li i {
+                font-size: 7rem;
+            }
+
+            li img {
+                width: 80px;
+            }
+        }
+    }
+
+    .resumeContainer .wrapper {
+        .timelineContainer {
+            h5 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .educationContainer,
+            .experienceContainer {
+                ul {
+                    .resumeLeft::after,
+                    .resumeRight::after {
+                        left: -67px;
+                    }
+                }
+            }
+        }
+    }
+
+    .portfolioSection .wrapper {
+        .portfolioFilterList {
+            display: none;
+            visibility: hidden;
+        }
+
+        .filterDropdown {
+            display: block;
+            visibility: visible;
+            margin-bottom: 20px;
+            width: 80%;
+            
+            select {
+                font-family: "Jost", sans-serif;
+                border: 3px solid $mango;
+                border-radius: 30px;
+                background: transparent;
+                padding: 10px 20px;
+                width: 100%;
+                text-align: center;
+                transition: color 0.8s, background-color 0.8s, box-shadow 0.8s, border-color 0.8s;
+                transition-delay: 0.2s;
+            }
+
+            select:hover,
+            select:focus,
+            select:active {
+                color: $lighterPink;
+                background-color: $salmon;
+                border-color: $salmon;
+                box-shadow: 0 0 22px rgb(0, 0, 0, 0.16);
+            }
+        }
+
+        .portfolioContent {
+            gap: 0;
+
+            .portfolioItem {
+                .projectHoverContainer {
+                    height: 375px;
+                }
+
+                .projectTitleContainer {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .portfolioMoreBtn {
+            margin-top: 50px;
+        }
+    }
+
+    footer .wrapper {
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
