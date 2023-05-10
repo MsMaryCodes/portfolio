@@ -1,0 +1,119 @@
+@media (max-width: 810px) {
+    // base styles
+    .wrapper {
+        margin: 2rem;
+    }
+
+    // nav
+    nav .wrapper .navMenu {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+
+        .logoImg {
+            width: 60px;
+        }
+
+        .navBarList {
+            gap: 20px;
+        }
+    }
+
+    // header
+    .headerSection .wrapper .heroText {
+        h1 {
+            font-size: 6rem;
+        }
+        h2 {
+            font-size: 1.6rem;
+        }
+    }
+
+    // about
+    .aboutSection .wrapper {
+        flex-direction: column-reverse;
+        justify-content: center;
+
+        .textContainer,
+        .imgContainer {
+            width: 100%;
+        }
+    }
+
+    // resume
+    .skillContainer .wrapper {
+        h5 {
+            font-size: 1.2rem;
+        }
+        .skillsCoding {
+            width: 90%;
+        }
+    }
+
+    // portfolio
+    .portfolioSection .wrapper .portfolioContent {
+        gap: 10px;
+
+        .portfolioItem {
+            width: 100%;
+
+            .projectHoverContainer {
+                height: 450px;
+
+                .titleHover p {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    // contact 
+    .contactSection .wrapper .contactContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .contactFormContainer {
+            width: 100%;
+
+            h4,p {
+                text-align: center;
+            }
+
+            form .formBtn {
+                width: 70%;
+                margin: 20px auto;
+            }
+        }
+
+        .contactDetailsContainer {
+            h4,p {
+                margin-bottom: 30px;
+            }
+
+            h4 {
+                text-align: center;
+            }
+
+            h5 {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .contactDetailsList {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .socialList {
+                margin-left: 60px;
+
+                li {
+                margin-top: 0;
+                }
+            }
+        }
+    }
+}
