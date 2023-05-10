@@ -300,13 +300,14 @@
                         <div class="contactFormContainer">
                             <h4>Contact form</h4>
                             <p>Please allow up to one week for me to get back to you! Thank you!</p>
-                            <form action="submit">
+                            <form action="https://formspree.io/f/xbjebjbk" method="POST" id="my-form">
                                 <input type="text" placeholder="Your Name">
                                 <input type="text" placeholder="Your Email">
                                 <input type="text" placeholder="Your Phone Number">
                                 <label for="messageBox" class="sr-only">Write a message</label>
                                 <textarea name="messageBox" id="" cols="30" rows="10" placeholder="Write a Message"></textarea>
-                                <button type="submit" class="btn formBtn">Send Message</button>
+                                <button class="btn formBtn" id="my-form-button">Send Message</button>
+                                <p id="my-form-status"></p>
                             </form>
                         </div>
                         <div class="contactDetailsContainer">
