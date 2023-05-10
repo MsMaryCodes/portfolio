@@ -15,16 +15,46 @@
 
     nav .wrapper .navMenu {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+        width: 100%;
+        position: relative;
 
         .logoImg {
             width: 100px;
         }
+
+        .hamBtn {
+            display: block;
+            visibility: visible;
+            z-index: 100;
+        }
         
         .navBarList {
+            position: absolute;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            left: -16px;
+            top: -36px;
+            gap: 100px;
+            background: $lightPink;
             display: none;
-            visibility: hidden;
+
+            li {
+                width: 100%;
+                a {
+                font-size: 2rem;
+                color: $mango;
+                }
+            }
         }
+
+        .show {
+            display: flex;
+        }
+
     }
 
     .aboutSection .wrapper {

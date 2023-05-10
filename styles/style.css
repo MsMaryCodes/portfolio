@@ -317,6 +317,11 @@ img {
      object-position: center;
 }
 
+.removeScrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 nav {
   position: absolute;
   margin-left: auto;
@@ -356,6 +361,25 @@ nav .wrapper .navMenu {
 }
 nav .wrapper .navMenu .logoImg {
   width: 100px;
+}
+nav .wrapper .navMenu .hamBtn {
+  display: none;
+  visibility: hidden;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #f5a945;
+  font-size: 3rem;
+  -webkit-transition: color 0.8s, scale 0.8s;
+  transition: color 0.8s, scale 0.8s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+nav .wrapper .navMenu .hamBtn:hover,
+nav .wrapper .navMenu .hamBtn:active,
+nav .wrapper .navMenu .hamBtn:focus {
+  color: #e57769;
+  scale: 1.1;
 }
 nav .wrapper .navMenu .navBarList {
   display: -webkit-box;
@@ -1158,16 +1182,50 @@ footer .wrapper p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    position: relative;
   }
   nav .wrapper .navMenu .logoImg {
     width: 100px;
   }
+  nav .wrapper .navMenu .hamBtn {
+    display: block;
+    visibility: visible;
+    z-index: 100;
+  }
   nav .wrapper .navMenu .navBarList {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    height: 100vh;
+    left: -16px;
+    top: -36px;
+    gap: 100px;
+    background: #FFDBD9;
     display: none;
-    visibility: hidden;
+  }
+  nav .wrapper .navMenu .navBarList li {
+    width: 100%;
+  }
+  nav .wrapper .navMenu .navBarList li a {
+    font-size: 2rem;
+    color: #f5a945;
+  }
+  nav .wrapper .navMenu .show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .aboutSection .wrapper .textContainer {
     text-align: center;

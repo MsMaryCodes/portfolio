@@ -23,6 +23,25 @@ nav {
                 width: 100px;
             }
 
+            .hamBtn {
+                display: none;
+                visibility: hidden;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                color: $mango;
+                font-size: 3rem;
+                transition: color 0.8s, scale 0.8s;
+                transition-delay: 0.2s;
+            }
+
+            .hamBtn:hover,
+            .hamBtn:active,
+            .hamBtn:focus {
+                color: $salmon;
+                scale: 1.1;
+            }
+
             .navBarList {
                 display: flex;
                 gap: 50px;
@@ -56,3 +75,4 @@ nav {
 
 
 }
+
