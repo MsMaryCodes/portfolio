@@ -1038,6 +1038,53 @@ footer .wrapper p {
   .skillContainer .wrapper .skillsCoding {
     width: 90%;
   }
+  .resumeContainer .wrapper h4 {
+    margin-left: 80px;
+  }
+  .resumeContainer .wrapper .timelineContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .resumeContainer .wrapper .timelineContainer .educationContainer,
+  .resumeContainer .wrapper .timelineContainer .experienceContainer {
+    width: 95%;
+  }
+  .resumeContainer .wrapper .timelineContainer .educationContainer ul,
+  .resumeContainer .wrapper .timelineContainer .experienceContainer ul {
+    padding-top: 0;
+  }
+  .resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeLeft:nth-child(1),
+  .resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeLeft:nth-child(2),
+  .resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeLeft:nth-child(1),
+  .resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeLeft:nth-child(2) {
+    margin-bottom: 30px;
+  }
+  .resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeLeft,
+  .resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeRight,
+  .resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeLeft,
+  .resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeRight {
+    margin-left: 80px;
+  }
+  .resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeLeft::before,
+  .resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeLeft::before {
+    right: 0;
+    left: -15px;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #FFDBD9 transparent transparent;
+  }
+  .resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeLeft::after,
+  .resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeRight::after,
+  .resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeLeft::after,
+  .resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeRight::after {
+    right: 0;
+    left: -53px;
+  }
+  .resumeContainer .wrapper .timelineContainer::after {
+    left: 5%;
+  }
   .portfolioSection .wrapper .portfolioContent {
     gap: 10px;
   }

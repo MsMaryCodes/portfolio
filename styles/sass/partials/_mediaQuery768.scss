@@ -50,6 +50,52 @@
         }
     }
 
+    .resumeContainer .wrapper {
+        h4 {
+            margin-left: 80px;
+        }
+        .timelineContainer {
+            flex-direction: column-reverse;
+            gap: 30px;
+            
+            .educationContainer,
+            .experienceContainer {
+                width: 95%;
+
+                ul {
+                    padding-top: 0;
+
+                    .resumeLeft:nth-child(1),
+                    .resumeLeft:nth-child(2) {
+                        margin-bottom: 30px;
+                    }
+
+                    .resumeLeft,
+                    .resumeRight {
+                        margin-left: 80px;
+                    }
+
+                    .resumeLeft::before {
+                        right: 0;
+                        left: -15px;
+                        border-width: 15px 15px 15px 0;
+                        border-color: transparent $lightPink transparent transparent;
+                    }
+
+                    .resumeLeft::after,
+                    .resumeRight::after {
+                        right: 0;
+                        left: -53px;
+                    }
+                }
+            }
+        }
+
+        .timelineContainer::after {
+            left: 5%;
+        }
+    }
+
     // portfolio
     .portfolioSection .wrapper .portfolioContent {
         gap: 10px;
