@@ -6,51 +6,52 @@ nav {
     right: 0;
     display: flex;
     justify-content: center;
-    
+
     .wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
 
-            .navMenu {
+        .navMenu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 500px;
+            margin-top: 50px;
+
+            .logoImg {
+                width: 100px;
+            }
+
+            .navBarList {
+                display: flex;
+                gap: 50px;
+                justify-content: space-between;
+
+                li {
+                    width: 120px;
                     display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 500px;
-                    margin-top: 50px;
-                
-                    .logoImg {
-                        width: 100px;
+                    justify-content: center;
+
+                    a {
+                        font-size: 1.1rem;
+                        color: $lightPink;
+                        text-align: center;
+                        transition: color 0.8s, font-weight 0.8s, scale 0.8s;
+                        transition-delay: 0.2s;
                     }
-                    .navBarList {
-                        display: flex;
-                        gap: 50px;
-                        justify-content: space-between;
-                        
-                        li {
-                            width: 120px;
-                            display: flex;
-                            justify-content: center;
 
-                            a {
-                                    font-size: 1.1rem;
-                                    color: $lightPink;
-                                    text-align: center;
-                                    transition: color 0.8s, font-weight 0.8s, scale 0.8s;
-                                    transition-delay: 0.2s;
-                                }
-                            
-                                a:hover,
-                                a:active,
-                                a:focus {
-                                    color: $salmon;
-                                    font-weight: 600;
-                                    scale: 1.1;
-                                }
-                        }
-
+                    a:hover,
+                    a:active,
+                    a:focus {
+                        color: $salmon;
+                        font-weight: 600;
+                        scale: 1.1;
                     }
                 }
+
+            }
+        }
     }
 
 

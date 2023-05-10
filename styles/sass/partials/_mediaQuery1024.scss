@@ -1,0 +1,81 @@
+@media (max-width: 1024px) {
+    // base styles
+    .wrapper {
+        margin: 3rem;
+    }
+
+    // nav style
+    nav .wrapper .navMenu {
+        // flex-direction: column;
+        gap: 100px;
+
+        .logoImg {
+            width: 80px;
+        }
+    }
+
+    .mainSection .main-content {
+        padding: 30px 0;
+    }
+    // resume section
+    .skillContainer .wrapper .skillsCoding {
+        flex-wrap: wrap;
+        width: 70%;
+        justify-content: center;
+        gap: 50px 80px;
+    }
+
+    .resumeContainer .wrapper .timelineContainer {
+        h5 {
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+
+        .educationContainer,
+        .experienceContainer {
+            ul {
+                .resumeLeft:nth-child(1) {
+                    margin-bottom: 182px;
+                }
+
+                .resumeLeft:nth-child(2) {
+                    margin-bottom: 80px;
+                }
+
+                .resumeLeft::after {
+                    right: -47px;
+                }
+
+                .resumeRight::after {
+                    left: -52px;
+                }
+            }
+        }
+    }
+
+    // portfolio
+    .sectionBreak {
+        height: 10vh;
+    }
+
+    .portfolioSection .wrapper .portfolioContent {
+        .portfolioItem {
+            width: 45%;
+        }
+    }
+
+    // contact 
+    .contactSection .wrapper .contactContainer {
+        .contactFormContainer {
+            width: 70%;
+
+            form .formBtn {
+                width: 50%;
+            }
+        }
+    }
+
+
+}

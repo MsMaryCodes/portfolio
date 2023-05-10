@@ -485,7 +485,6 @@ nav .wrapper .navMenu .navBarList li a:focus {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 80px 0;
-  width: 100vw;
 }
 .mainSection .formBtn {
   background-color: transparent;
@@ -703,7 +702,7 @@ nav .wrapper .navMenu .navBarList li a:focus {
 
 .sectionBreak {
   background-color: #FFDBD9;
-  height: 5vh;
+  height: 20vh;
 }
 
 .portfolioSection .wrapper {
@@ -937,4 +936,62 @@ footer .wrapper {
 footer .wrapper p {
   color: #6a8679;
   margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    margin: 3rem;
+  }
+  nav .wrapper .navMenu {
+    gap: 100px;
+  }
+  nav .wrapper .navMenu .logoImg {
+    width: 80px;
+  }
+  .mainSection .main-content {
+    padding: 30px 0;
+  }
+  .skillContainer .wrapper .skillsCoding {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px 80px;
+  }
+  .resumeContainer .wrapper .timelineContainer h5 {
+    font-size: 1.2rem;
+  }
+  .resumeContainer .wrapper .timelineContainer p {
+    font-size: 1rem;
+  }
+  .resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeLeft:nth-child(1),
+  .resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeLeft:nth-child(1) {
+    margin-bottom: 182px;
+  }
+  .resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeLeft:nth-child(2),
+  .resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeLeft:nth-child(2) {
+    margin-bottom: 80px;
+  }
+  .resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeLeft::after,
+  .resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeLeft::after {
+    right: -47px;
+  }
+  .resumeContainer .wrapper .timelineContainer .educationContainer ul .resumeRight::after,
+  .resumeContainer .wrapper .timelineContainer .experienceContainer ul .resumeRight::after {
+    left: -52px;
+  }
+  .sectionBreak {
+    height: 10vh;
+  }
+  .portfolioSection .wrapper .portfolioContent .portfolioItem {
+    width: 45%;
+  }
+  .contactSection .wrapper .contactContainer .contactFormContainer {
+    width: 70%;
+  }
+  .contactSection .wrapper .contactContainer .contactFormContainer form .formBtn {
+    width: 50%;
+  }
 }
